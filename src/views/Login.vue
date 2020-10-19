@@ -37,11 +37,12 @@ export default {
       Vue.googleAuth().signIn(this.onSignInSuccess, this.onSignInError)
     },
     onSignInSuccess: function (authorizationCode) {
-      this.toggleLoading()
-      this.resetResponse()
+      this.toggleLoading();
+      this.resetResponse();
 
+      const apiUrl = process.env.VUE_APP_API_BASE_URL;
       this.$http
-          .post('https://urls.mindojo.nas/api/v1/token', {code: authorizationCode, redirect_uri: 'postmessage'})
+          .post(`${apiUrl}/token`, {code: authorizationCode, redirect_uri: 'postmessage'})
           .then(function (response) {
                 if (response.data) {
                   const data = response.data

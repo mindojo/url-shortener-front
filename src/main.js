@@ -12,8 +12,8 @@ if (token) {
 
 Vue.config.productionTip = false;
 
-// TODO PD1-4593 Implement storage of configuration in environment variables
-Vue.use(GoogleAuth, {client_id: '239259465909-dbffdi86j3oo5gra41cis2l2f9ghbmrn.apps.googleusercontent.com'});
+const googleClientId = process.env.VUE_APP_GOOGLE_CLIENT_ID;
+Vue.use(GoogleAuth, {client_id: `${googleClientId}`});
 Vue.googleAuth().load();
 
 new Vue({
