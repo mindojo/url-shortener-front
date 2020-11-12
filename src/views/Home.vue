@@ -46,7 +46,7 @@ export default {
     return {
       urls: null,
 
-      editedUrl: 
+      editedUrl:
       {
           description: null,
           expire_after: null,
