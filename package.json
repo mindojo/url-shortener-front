@@ -10,7 +10,6 @@
   "dependencies": {
     "axios": "0.20.0",
     "core-js": "3.6.5",
-    "javascript-styleguide": "^1.0.0",
     "vue": "2.6.12",
     "vue-google-auth": "1.0.5"
   },
@@ -20,21 +19,10 @@
     "@vue/cli-service": "4.5.4",
     "babel-eslint": "10.1.0",
     "eslint-plugin-vue": "6.2.2",
+    "eslint": "7.20.0",
+    "eslint-plugin-import": "2.22.1",
+    "mindojo-js-styleguide": "git+ssh://git@github.com:mindojo/mindojo-js-styleguide.git",
     "vue-template-compiler": "2.6.12"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
   },
   "browserslist": [
     "> 1%",
