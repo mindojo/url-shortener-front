@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@mindojo/eslint-config": "git+ssh://git@github.com:mindojo/eslint-config-mindojo.git#1.0.0",
     "axios": "0.20.0",
     "core-js": "3.6.5",
     "vue": "2.6.12",
@@ -18,10 +19,7 @@
     "@vue/cli-plugin-eslint": "4.5.4",
     "@vue/cli-service": "4.5.4",
     "babel-eslint": "10.1.0",
-    "eslint-plugin-vue": "6.2.2",
-    "eslint": "7.20.0",
-    "eslint-plugin-import": "2.22.1",
-    "mindojo-js-styleguide": "git+ssh://git@github.com:mindojo/mindojo-js-styleguide.git",
+    "eslint-plugin-vue": "7.7.2",
     "vue-template-compiler": "2.6.12"
   },
   "browserslist": [
