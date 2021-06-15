@@ -5,10 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "eslint": "eslint --ext .js,.vue ."
+    "eslint": "eslint --ext .js,.vue .",
+    "eslint:diff": "./node_modules/.bin/eslint $(git status -s | grep -iE '.vue{0,1}$' | awk '{if ($1) print $2}')"
   },
   "dependencies": {
-    "@mindojo/eslint-config": "git+ssh://git@github.com:mindojo/eslint-config-mindojo.git#1.1.0",
+    "@mindojo/eslint-config": "git+ssh://git@github.com:mindojo/eslint-config-mindojo.git#1.2.0",
     "axios": "0.20.0",
     "core-js": "3.6.5",
     "vue": "2.6.12",
